@@ -82,7 +82,7 @@ const toggleCamera = async () => {
 <template>
     <div class="wrapper">
         <div class="box">
-            <div class="wrap"><div id="reader"></div></div>
+            <div id="reader"></div>
             <p v-if="result">Kết quả: {{ result }}</p>
             <p v-if="error">Lỗi: {{ error }}</p>
             <button @click="startScanning" :disabled="isScanning">Bắt đầu quét</button>
@@ -108,7 +108,6 @@ const toggleCamera = async () => {
 }
 video {
     width: 100% !important;
-    aspect-ratio: 16/12;
 }
 #reader {
     height: fit-content;
