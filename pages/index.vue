@@ -112,6 +112,12 @@ video {
 }
 .wrap {
     height: fit-content;
+    max-width: 300px;
+}
+
+#reader {
+    height: fit-content;
+    margin: 300px;
 }
 
 /* video {
