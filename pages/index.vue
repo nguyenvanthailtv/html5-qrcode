@@ -108,7 +108,7 @@ const toggleCamera = async () => {
 }
 video {
     width: 100% !important;
-    max-height: 200px!important;
+    aspect-ratio: 4/3;
 }
 .wrap {
     height: fit-content;
