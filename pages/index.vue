@@ -107,7 +107,7 @@ const toggleCamera = async () => {
     background-color: white;
 }
 video {
-    width: 100%;
+    width: 100% !important;
 }
 .wrap {
     height: fit-content;
