@@ -82,7 +82,7 @@ const toggleCamera = async () => {
 <template>
     <div class="wrapper">
         <div class="box">
-            <div id="reader"></div>
+            <div class="wrap"><div id="reader"></div></div>
             <p v-if="result">Kết quả: {{ result }}</p>
             <p v-if="error">Lỗi: {{ error }}</p>
             <button @click="startScanning" :disabled="isScanning">Bắt đầu quét</button>
@@ -101,20 +101,12 @@ const toggleCamera = async () => {
     justify-content: center;
     background-color: red;
 }
-
 .box {
-    width: 100%;
-    max-width: 25rem;
-    height: 100%;
-    max-height: 25rem;
-    background-color: white;
+    height: fit-content;
 }
 
-#reader {
-    width: 100%;
-    height: 100%;
- max-height: 250px;
- max-width: 250px;
+.wrap {
+    height: fit-content;
 }
 
 /* video {
