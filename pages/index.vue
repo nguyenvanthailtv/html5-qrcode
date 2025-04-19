@@ -80,12 +80,37 @@ const toggleCamera = async () => {
 };
 </script>
 <template>
-    <div>
-        <div id="reader" style="width: 100%; max-width: 600px;"></div>
-        <p v-if="result">Kết quả: {{ result }}</p>
-        <p v-if="error">Lỗi: {{ error }}</p>
-        <button @click="startScanning" :disabled="isScanning">Bắt đầu quét</button>
-        <button @click="stopScanning" :disabled="!isScanning">Dừng quét</button>
-        <button @click="toggleCamera" :disabled="!isScanning">Đổi camera</button>
+    <div class="wrapper">
+        <div class="box">
+            <div id="reader"></div>
+            <p v-if="result">Kết quả: {{ result }}</p>
+            <p v-if="error">Lỗi: {{ error }}</p>
+            <button @click="startScanning" :disabled="isScanning">Bắt đầu quét</button>
+            <button @click="stopScanning" :disabled="!isScanning">Dừng quét</button>
+            <button @click="toggleCamera" :disabled="!isScanning">Đổi camera</button>
+        </div>
     </div>
 </template>
+
+<style>
+.wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    width: 100%;
+    max-width: 25rem;
+    height: 100%;
+    max-height: 25rem;
+    background-color: white;
+}
+
+/* video {
+    width: 300px !important;
+} */
+</style>
