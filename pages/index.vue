@@ -99,7 +99,7 @@ const toggleCamera = async () => {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: red;
 }
 
 .box {
@@ -111,6 +111,8 @@ const toggleCamera = async () => {
 }
 
 #reader {
+    width: 100%;
+    height: 100%;
  max-height: 250px;
  max-width: 250px;
 }
