@@ -108,17 +108,10 @@ const toggleCamera = async () => {
 }
 video {
     width: 100% !important;
-    background-color: aqua;
 }
-.wrap {
-    height: fit-content;
-    max-width: 300px;
-}
-
 #reader {
     height: fit-content;
     max-width: 300px;
-    max-height: 300px;
 }
 
 /* video {
