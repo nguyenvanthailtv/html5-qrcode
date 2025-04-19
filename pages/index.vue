@@ -117,7 +117,7 @@ video {
 
 #reader {
     height: fit-content;
-    margin: 300px;
+    max-width: 300px;
 }
 
 /* video {
