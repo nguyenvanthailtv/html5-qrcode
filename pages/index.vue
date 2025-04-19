@@ -108,6 +108,7 @@ const toggleCamera = async () => {
 }
 video {
     width: 100% !important;
+    aspect-ratio: 16/12;
 }
 #reader {
     height: fit-content;
