@@ -28,7 +28,7 @@ const startScanning = async () => {
         error.value = null;
 
         // Cấu hình quét QR
-        const config = { fps: 10, qrbox: { width: 250, height: 250 } };
+        const config = { fps: 10, qrbox: { width: 150, height: 150 } };
 
         // Bắt đầu quét với cameraMode hiện tại
         await html5QrCode.start(
